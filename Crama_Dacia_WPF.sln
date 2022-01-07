@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crama_Dacia_WPF", "Crama_Dacia_WPF.csproj", "{F3166D62-4E31-4B68-ACD2-071362F66BBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CramaDaciaModel", "..\CramaDaciaModel\CramaDaciaModel.csproj", "{631F6DCB-19FC-40BA-AEB7-AD0331A01FE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3166D62-4E31-4B68-ACD2-071362F66BBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3166D62-4E31-4B68-ACD2-071362F66BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3166D62-4E31-4B68-ACD2-071362F66BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3166D62-4E31-4B68-ACD2-071362F66BBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{631F6DCB-19FC-40BA-AEB7-AD0331A01FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{631F6DCB-19FC-40BA-AEB7-AD0331A01FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{631F6DCB-19FC-40BA-AEB7-AD0331A01FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{631F6DCB-19FC-40BA-AEB7-AD0331A01FE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2810351A-768E-4521-95AA-CA32F5961924}
+	EndGlobalSection
+EndGlobal
