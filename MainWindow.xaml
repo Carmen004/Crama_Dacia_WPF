@@ -13,6 +13,7 @@
         <CollectionViewSource x:Key="clientiViewSource" d:DesignSource="{d:DesignInstance {x:Type CramaDaciaModel:Clienti}, CreateList=True}"/>
         <CollectionViewSource x:Key="comenziViewSource" d:DesignSource="{d:DesignInstance {x:Type CramaDaciaModel:Comenzi}, CreateList=True}"/>
         <CollectionViewSource x:Key="tipuriViewSource" d:DesignSource="{d:DesignInstance {x:Type CramaDaciaModel:Tipuri}, CreateList=True}"/>
+      
         <ControlTemplate x:Key="validationTemplate">
             <DockPanel>
                 <TextBlock Foreground="Red" FontSize="20">!</TextBlock>
@@ -184,9 +185,9 @@
                         <Label Content="Client Id:" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="56" Grid.ColumnSpan="4"/>
                         <TextBox x:Name="clientIdTextBox" Grid.Column="4" HorizontalAlignment="Left" Height="24" Margin="3.6,4,0,4" Grid.Row="0" Text="{Binding ClientId, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120" Grid.ColumnSpan="4"/>
                         <Label Content="Nume:" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="1" VerticalAlignment="Center" Height="26" Width="45" Grid.ColumnSpan="4"/>
-                        <TextBox x:Name="nume1TextBox" Grid.Column="4" HorizontalAlignment="Left" Height="24" Margin="3.6,4,0,4" Grid.Row="1" Text="{Binding Nume, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120" Grid.ColumnSpan="4"/>
+                        <TextBox x:Name="nume1TextBox" Grid.Column="4" HorizontalAlignment="Left" Height="24" Margin="3.6,4,0,4" Grid.Row="1" Text="{Binding Nume, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120" Grid.ColumnSpan="4" Validation.ErrorTemplate="{StaticResource validationTemplate}" Style="{StaticResource textBoxInError}"/>
                         <Label Content="Prenume:" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="2" VerticalAlignment="Center" Height="26" Width="59" Grid.ColumnSpan="4"/>
-                        <TextBox x:Name="prenumeTextBox" Grid.Column="4" HorizontalAlignment="Left" Height="24" Margin="3.6,4,0,4" Grid.Row="2" Text="{Binding Prenume, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120" Grid.ColumnSpan="4"/>
+                        <TextBox x:Name="prenumeTextBox" Grid.Column="4" HorizontalAlignment="Left" Height="24" Margin="3.6,4,0,4" Grid.Row="2" Text="{Binding Prenume, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120" Grid.ColumnSpan="4" Validation.ErrorTemplate="{StaticResource validationTemplate}" Style="{StaticResource textBoxInError}"/>
                     </Grid>
                     <Button x:Name="btnPrev2" Content="Previous" HorizontalAlignment="Left" Margin="61,148,0,0" VerticalAlignment="Top" Width="75" Loaded="btnPrevious2_Click"/>
                     <Button x:Name="btnNext2" Content="Next" HorizontalAlignment="Left" Margin="324,143,0,0" VerticalAlignment="Top" Width="75" Loaded="btnNext2_Click"/>

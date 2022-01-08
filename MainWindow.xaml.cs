@@ -71,11 +71,15 @@ namespace Crama_Dacia_WPF
         private void btnNew_Click(object sender, RoutedEventArgs e)
         {
             action = ActionState.New;
+            SetValidationBinding();
         }
 
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
             action = ActionState.Edit;
+            BindingOperations.ClearBinding(nume1TextBox, TextBox.TextProperty);
+            BindingOperations.ClearBinding(prenume1, TextBox.TextProperty);
+            SetValidationBinding();
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
@@ -88,12 +92,14 @@ namespace Crama_Dacia_WPF
         private void btnPrevious2_Click(object sender, RoutedEventArgs e)
         {
             clientiVSource.View.MoveCurrentToPrevious();
+          
 
         }
 
         private void btnNext2_Click(object sender, RoutedEventArgs e)
         {
             clientiVSource.View.MoveCurrentToNext();
+         
         }
 
         private void SaveClienti()
@@ -294,7 +300,7 @@ namespace Crama_Dacia_WPF
             }
         }
 
-     /*   private void gbOperations_Click(object sender, RoutedEventArgs e)
+       private void gbOperations_Click(object sender, RoutedEventArgs e)
         {
             Button SelectedButton = (Button)e.OriginalSource;
             Panel panel = (Panel)SelectedButton.Parent;
@@ -305,7 +311,7 @@ namespace Crama_Dacia_WPF
                     B.IsEnabled = false;
             }
             gbActions.IsEnabled = true;
-        }*/
+        }
         private void ReInitialize()
         {
 
